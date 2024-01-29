@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% include "header.html" %}
+{% block title %}Coffee{% endblock %}
+{% block content %}
+
+<h1 class="display-4">Result</h1>
+<h2> Coffee in {{all_cafes.location}}</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            {% for cafe_datas in all_cafe %}
+            <div class="table">
+                <a href="{{ url_for('cafes', index=cafe_datas.id) }}">
+                    <img align="left" src={{cafe_datas.img_url}} width="300" height="300">
+                </a>
+                <p class="all_cafe-preview">
+                    <br><br>
+                    {{cafe_datas.name}}
+                    <br>
+                    {{cafe_datas.opening}} - {{cafe_datas.closing}}
+                    <br>
+                    {{cafe_datas.adresse}} - {{cafe_datas.location}}
+                </p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <p class="space-above"></p>
+</div>
+{% include "footer.html" %}
+{% endblock %}

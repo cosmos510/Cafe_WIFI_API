@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% include "header.html" %}
+{% block title %}Coffee{% endblock %}
+{% block content %}
+
+<h1 class="display-4">{{all_cafe.name}}</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+        <br><br>
+        <p class="okok">
+            {{all_cafe.name}}
+            <br>
+            {{all_cafe.opening}} - {{all_cafe.closing}}
+            <br>
+            {{all_cafe.adresse}} - {{all_cafe.location}}
+            <br>
+            Power socket availability   {{all_cafe.power_socket_availability}}
+            <br>
+            Coffee Price  {{all_cafe.coffee_price}} / Coffee Rating   {{all_cafe.coffee_rating}}
+            <br>
+            Seat Availability  {{all_cafe.seats}}
+            <br>
+            Wi-Fi Strength   {{all_cafe.wifi_strength}}
+            <br>
+            Toilet   {{all_cafe.has_toilet}}
+            <br>
+            <a class="test" href="{{all_cafe.map_url}}">find it on map</a>
+        </p>
+    </div>
+  </div>
+</div>
+<p class="space-above"></p>
+
+{% include "footer.html" %}
+{% endblock %}

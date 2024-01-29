@@ -1,0 +1,101 @@
+body {
+    background-color: #CC9544;
+    color: #361500;
+}
+
+a {
+    color: #CC9544;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  color: #361500;
+  background-color: #CC9544;
+}
+
+.space-above {
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.nav-link{
+    color:#CC9544;
+    font: italic small-caps bold 20px/30px Georgia, serif;
+}
+
+.nav-link:hover{
+    color:#CC9544;
+}
+
+h1{
+    color:#361500;
+    top:40%;
+    font: italic small-caps bold 40px/40px Georgia, serif;
+}
+
+h1.display-4{
+    color:#CC9544;
+    text-align: center;
+    margin-top:-200px;
+}
+
+div.table{
+    margin-top:150px;
+    text-align:center;
+}
+
+div.login-form{
+  color: black;
+  width:350px;
+  background:#CC9544;
+  margin-top:200px;
+  button: black;
+}
+
+.login-form{
+    font: italic   20px/40px Georgia, serif;
+}
+
+.btn{
+    background:#FFCA2C;
+    border-color:#FFCA2C;
+    color:black;
+}
+
+header.masthead{
+    height:300px;
+}
+
+ul.navbar-nav{
+    position:absolute;
+    right:50px;
+    top:10px;
+}
+
+section.row{
+    text-align:center;
+    margin-top:100px;
+}
+
+p{
+    font: italic   20px/40px Georgia, serif;
+}
+
+h2{
+    font: italic small-caps bold 30px/30px Georgia, serif;
+    color:#FFCA2C;
+    text-align: center;
+    margin-top:200px;
+}
+
+a.test{
+    color:black;
+}
+
+p.okok{
+    margin-top:200px;
+}
+

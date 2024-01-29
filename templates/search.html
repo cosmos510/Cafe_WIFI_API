@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% include "header.html" %}
+
+{% from 'bootstrap5/form.html' import render_form %}
+{% block title %}Result  {% endblock %}
+{% block content %}
+
+<h1 class="display-4"> Have a look for a coffee Nearby</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class = "login-form">
+                {{ render_form(form) }}
+            </div>
+        </div>
+    </div>
+    <p class="space-above"></p>
+</div>
+
+{% include "footer.html" %}
+{% endblock %}
